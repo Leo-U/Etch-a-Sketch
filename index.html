@@ -10,13 +10,12 @@
     <div id="containerAll">
         <div id="gridContainer"></div>
         <button id="clearButton">Clear</button>
-        <form>
+        <form id="formContainer" onkeypress="return event.keyCode != 13">
             Squares per side:
-            <input type="text">
-            <input type="submit">
+            <input type="text" id="textField">
+            <button type="button" id="submit">Submit</button>
         </form>
     </div>
     <script src="script.js"></script>
-
 </body>
 </html>
