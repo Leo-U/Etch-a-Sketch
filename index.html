@@ -6,13 +6,13 @@
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body style="background-color: bisque;">
     <div id="containerAll">
         <div id="gridContainer"></div>
         <form id="formContainer" onkeypress="return event.keyCode != 13">
             Squares per side:
             <input type="text" id="textField">
-            <button type="button" id="submit">Submit/clear</button>
+            <button type="button" id="submitButton">Erase + Submit</button>
         </form>
         <p id="valueTooHigh"></p>
     </div>
