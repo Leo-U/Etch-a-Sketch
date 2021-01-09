@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body style="background-color: bisque;">
     <div id="containerAll">
@@ -12,7 +11,7 @@
         <form id="formContainer" onkeypress="return event.keyCode != 13">
             Squares per side:
             <input type="text" id="textField">
-            <button type="button" id="submitButton">Erase + Submit</button>
+            <button id=submitButton type="button" style="border: none; background: url(/images/pix-submit-2.png) no-repeat center; padding: 2px 8px; background-color: black; border-radius: 2px;"></button>
         </form>
         <p id="valueTooHigh"></p>
     </div>

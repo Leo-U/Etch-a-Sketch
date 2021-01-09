@@ -4,18 +4,25 @@ const gridContainer = document.querySelector('#gridContainer');
 gridContainer.style.height = '320px';
 gridContainer.style.width = '320px';
 gridContainer.style.backgroundColor = 'black';
+gridContainer.style.borderRadius = '2px'
 containerAll.style.width = '320px';
 containerAll.style.margin = '0 auto';
 containerAll.style.marginTop = '100px';
+formContainer.style.display = 'flex';
+formContainer.style.alignItems = 'center';
+formContainer.style.justifyContent = 'space-between';
 formContainer.style.width = '280px';
-formContainer.style.margin = '0 auto';
 formContainer.style.marginTop = '10px';
+formContainer.style.marginLeft = '17px';
 textField.style.width = '40px';
-submitButton.style.border = '1.75px solid black';
-submitButton.style.color = 'black';
-submitButton.style.backgroundColor = 'limegreen';
-submitButton.style.borderRadius = '2px';
+textField.style.height = '34px';
+textField.style.border = '1.75px solid black';
+textField.style.textAlign = 'center';
+textField.style.fontSize = '19px';
+textField.style.marginLeft = '-20px';
 valueTooHigh.style.marginLeft = '65px';
+submitButton.style.height = '40px';
+submitButton.style.width = '80px';
 
 //functions:
 
@@ -63,11 +70,29 @@ const inputValue = () => {
     };
 };
 
+const buttonToInverted = () => {
+    submitButton.style.background = 'url(/images/pix-submit.png';
+    submitButton.style.backgroundRepeat = 'no-repeat';
+    submitButton.style.backgroundPosition = 'center';
+    submitButton.style.backgroundColor = 'limegreen';
+}
+
+const buttonToDefault = () => {
+    submitButton.style.background = 'url(/images/pix-submit-2.png';
+    submitButton.style.backgroundRepeat = 'no-repeat';
+    submitButton.style.backgroundPosition = 'center';
+    submitButton.style.backgroundColor = 'black';
+}
+
 // event listeners:
 
 const submit = document.querySelector('#submitButton');
 
 submit.addEventListener('click', inputValue);
+
+submit.addEventListener('mouseenter', buttonToInverted);
+
+submit.addEventListener('mouseleave', buttonToDefault);
 
 textField.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
