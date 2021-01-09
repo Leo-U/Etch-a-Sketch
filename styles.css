@@ -1,0 +1,39 @@
+#submitButton {
+    height: 40px;
+    width: 80px;
+}
+
+#textField {
+    width: 40px;
+    height: 34px;
+    border: 1.75px solid black;
+    text-align: center;
+    font-size: 19px;
+    margin-left: -20px;
+}
+
+#gridContainer {
+    height: 320px;
+    width: 320px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+#formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    margin-top: 10px;
+    margin-left: 17px;
+}
+
+#valueTooHigh {
+    margin-left: 65px;
+}
+
+#containerAll {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
