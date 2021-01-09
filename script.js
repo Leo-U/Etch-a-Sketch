@@ -71,7 +71,7 @@ const inputValue = () => {
 };
 
 const buttonToInverted = () => {
-    submitButton.style.background = 'url(images/pix-submit.png';
+    submitButton.style.background = 'url(images/pix-submit';
     submitButton.style.backgroundRepeat = 'no-repeat';
     submitButton.style.backgroundPosition = 'center';
     submitButton.style.backgroundColor = 'limegreen';
