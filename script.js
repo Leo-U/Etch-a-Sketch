@@ -16,7 +16,6 @@ const gridInit = () => {
     gridClear();
     let gridSquare;
     for (i=0; i<userInput**2; i++) {
-
         gridSquare = document.createElement('div');
         gridSquare.className = "gridSquares";
         gridSquare.style.float = 'right';
