@@ -71,14 +71,14 @@ const inputValue = () => {
 };
 
 const buttonToInverted = () => {
-    submitButton.style.background = 'url(/images/pix-submit.png';
+    submitButton.style.background = 'url(images/pix-submit.png';
     submitButton.style.backgroundRepeat = 'no-repeat';
     submitButton.style.backgroundPosition = 'center';
     submitButton.style.backgroundColor = 'limegreen';
 }
 
 const buttonToDefault = () => {
-    submitButton.style.background = 'url(/images/pix-submit-2.png';
+    submitButton.style.background = 'url(images/pix-submit-2.png';
     submitButton.style.backgroundRepeat = 'no-repeat';
     submitButton.style.backgroundPosition = 'center';
     submitButton.style.backgroundColor = 'black';
